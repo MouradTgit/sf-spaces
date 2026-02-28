@@ -1,16 +1,16 @@
 import logo from './logo.svg'
+import './POPOSSpace.css'
 
-function POPOSSpace(props) {
-  const { name, image, address } = props
+function POPOSSpace({ name, address, image }) {
   return (
-    <div>
-      <img src={`${process.env.PUBLIC_URL}/images/50-california-st.jpg`}     
-        width="300"
-        height="300"
-        alt="50 Califonia St."
+    <div className="POPOSSpace">
+      <img
+        className="POPOSSpace-image"
+        src={`${process.env.PUBLIC_URL}/images/${image}`}
+        alt={name}
       />
-      <h1>Name...</h1>
-      <div>Address...</div>
+      <h1 className="POPOSSpace-title">{name}</h1>
+      <div className="POPOSSpace-address">{address}</div>
     </div>
   )
 }
