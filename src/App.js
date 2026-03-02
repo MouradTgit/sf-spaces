@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Title from './Title.js'
-import POPOSList from './POPOSList';
+import Title from './components/Title/Title.js'
+import POPOSList from './components/POPOSList/POPOSList.js';
 import Footer from './Footer'
 import { useState } from 'react'
+import POPOSDetails from './components/POPOSDetails/POPOSDetails.js'
+
 
 function App() {
   return (
